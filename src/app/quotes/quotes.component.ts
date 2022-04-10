@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NewQuote } from '../new-quote';
 
 @Component({
   selector: 'app-quotes',
