@@ -1,5 +1,6 @@
 <ul *ngFor="let myquote of quotes">
   <li>
-    {{myquote}}
+    {{myquote.quote}}
+    <span class="upvote"><button>Like {{myquote.upvotes}}</button></span> <span class="downvote"><button> Dislike {{myquote.downvotes}}</button></span>
   </li>
 </ul>
