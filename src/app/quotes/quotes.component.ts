@@ -7,6 +7,11 @@ import { NewQuote } from '../new-quote';
   styleUrls: ['./quotes.component.css']
 })
 export class QuotesComponent implements OnInit {
+  quotes: NewQuote []= [
+    new NewQuote (1, 'this one',0,0),
+    new NewQuote (1, 'this one',0,0),
+    new NewQuote (1, 'this one',0,0)
+  ]
 
   constructor() { }
 
