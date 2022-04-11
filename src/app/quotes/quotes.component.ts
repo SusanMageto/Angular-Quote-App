@@ -34,8 +34,9 @@ export class QuotesComponent implements OnInit {
     },
   ];
   createdQuotes (lastQuote: any){
-
+    this.quotes1.push(lastQuote)
   }
+  
 
   constructor() {}
 

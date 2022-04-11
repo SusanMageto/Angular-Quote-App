@@ -9,8 +9,8 @@ import { NewQuote } from '../new-quote';
 
 
 export class QuoteFormComponent implements OnInit {
-  lastQuote= new NewQuote(1, '', '', 0, 0);
   @Output () sendQuotes= new EventEmitter<NewQuote> ()
+  lastQuote= new NewQuote(1, '', '', 0, 0);
   addQuote (){
     this.sendQuotes.emit(this.lastQuote)
   }
