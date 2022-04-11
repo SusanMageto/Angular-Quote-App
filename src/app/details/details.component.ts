@@ -6,6 +6,10 @@ import { NewQuote } from '../new-quote';
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent implements OnInit {
+  count =0;
+  counter (type:string) {
+    type==='add'?this.count++:this.count--
+  }
   
   @Input () quotes1 !: NewQuote;
   author!: NewQuote;

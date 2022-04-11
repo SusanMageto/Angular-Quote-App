@@ -1,5 +1,5 @@
 <div class="container">
-  <div class="row mt-md-6 pt-5">
+  <div class="row mt-md-6 pt-5" id="row">
     <div class="col-md-4 text-center">
       <div>
       </div>   <h2>Add your quote here.</h2>
@@ -13,7 +13,7 @@
       </h2>
       <ul *ngFor="let myquote of quotes1">
         <li class>
-          {{myquote.quote}}
+          {{myquote.quote}} 
         </li>
         <app-details [quotes1]="myquote">
           

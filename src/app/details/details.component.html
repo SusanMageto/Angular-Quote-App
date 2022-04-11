@@ -1,7 +1,9 @@
 <div>
   <p>{{quotes1.author}}</p>
   <div class="votes">
-    <button id= "upv"class="btn btn-primary">Like {{quotes1.upvotes}}</button>
-<button class="btn btn-primary"> Dislike  {{quotes1.downvotes}}</button>
+    <p>{{count}}</p>
+    <button id="upv" class="btn btn-primary" (click)="counter('add')">Like {{quotes1.upvotes}}</button>
+    <button id="downv" class="btn btn-primary" (click)="counter('minus')"> Dislike {{quotes1.downvotes}}</button>
+    <button class="btn btn-primary">Delete</button>
   </div>
 </div>

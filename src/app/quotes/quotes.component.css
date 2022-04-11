@@ -1,0 +1,7 @@
+.col-md-8 li {
+  list-style: none;
+}
+#row{
+  display: flex;
+  flex-direction: row;
+}
