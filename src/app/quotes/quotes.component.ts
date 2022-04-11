@@ -31,7 +31,11 @@ export class QuotesComponent implements OnInit {
   createdQuotes (lastQuote: any){
     this.quotes1.push(lastQuote)
   }
-  
+  deleteQuote(isComplete, index){
+    if (isComplete) {
+      this.quotes1.splice(index,1);
+    }
+  }
 
   constructor() {}
 
