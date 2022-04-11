@@ -33,7 +33,9 @@ export class QuotesComponent implements OnInit {
       downvotes: 0,
     },
   ];
-  
+  createdQuotes (lastQuote: any){
+
+  }
 
   constructor() {}
 

@@ -1,5 +1,5 @@
 <div class="container-fluid">
-  <form >
+  <form #form='ngForm' (ngSubmit)="addQuote()">
     <div class="form-group">
       <label for="">Quote</label>
       <input type="text" class="form-control">
@@ -19,3 +19,4 @@
     </div>
   </form>
 </div>
+

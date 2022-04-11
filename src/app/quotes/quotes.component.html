@@ -1,8 +1,29 @@
-<ul *ngFor="let myquote of quotes1">
-  <li class>
-    {{myquote.quote}}
-  </li>
-  <app-details [quotes1]="myquote">
-    
-  </app-details>
-</ul>
+<div class="container">
+  <div class="row mt-md-6 pt-5">
+    <div class="col-md-4 text-center">
+      <div>
+      </div>   <h2>Add your quote here.</h2>
+      </div>
+      <div class="add">
+        <app-quote-form (sendQuotes)="createdQuotes($event)"></app-quote-form>
+    </div>
+    <div class="col-md-8 text-center">
+      <h2>
+        Popular Quotes
+      </h2>
+      <ul *ngFor="let myquote of quotes1">
+        <li class>
+          {{myquote.quote}}
+        </li>
+        <app-details [quotes1]="myquote">
+          
+        </app-details>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
