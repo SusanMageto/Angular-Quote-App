@@ -6,12 +6,8 @@ import { NewQuote } from '../new-quote';
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent implements OnInit {
-  quotes: NewQuote[] = [
-    new NewQuote(1, 'this one', 'sue', 0, 0),
-    // new NewQuote1(2, 'this two', 'vuvu', 0, 0),
-    // new NewQuote2(3, 'this three', 'deno', 0, 0),
-  ];
-  @Input()
+  
+  @Input () quotes1 !: NewQuote;
   author!: NewQuote;
   constructor() {}
 

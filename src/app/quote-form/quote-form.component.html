@@ -1,18 +1,21 @@
 <div class="container-fluid">
-  <form> 
-        <!-- defines the template variable for this form -->
-        <div class="form-group">
-          <label for="">Quote</label>
-          <input type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="">Author</label>
-          <input type="text" class="form-control">
-        </div>
-        <div class="form-group">
-          <label for="">Posted by</label>
-          <input type="text" class="form-control">
-        </div>
-        <div class="btn btn-primary" type="submit"> Add Quote </div>
-      </form>
+  <form >
+    <div class="form-group">
+      <label for="">Quote</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group" aria-required="true">
+      <label>Author</label>
+      <input type="text" class="form-control">
+    </div>
+    <div class="form-group" aria-required="true"> 
+      <label for="">Posted by</label>
+      <input type="text" class="form-control">
+    </div>
+    <div>
+      <button class="btn btn-primary" type="submit">
+        Add Quote
+      </button>
+    </div>
+  </form>
 </div>

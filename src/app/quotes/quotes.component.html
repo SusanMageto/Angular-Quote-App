@@ -1,8 +1,8 @@
-<ul *ngFor="let myquote of quotes">
+<ul *ngFor="let myquote of quotes1">
   <li class>
     {{myquote.quote}}
   </li>
-  <app-details>
+  <app-details [quotes1]="myquote">
     
   </app-details>
 </ul>
