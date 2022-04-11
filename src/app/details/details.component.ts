@@ -1,5 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { NewQuote } from '../new-quote';
+
+
 
 @Component({
   selector: 'app-details',
@@ -7,8 +9,11 @@ import { NewQuote } from '../new-quote';
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent implements OnInit {
+  @Input () quotes1 !: NewQuote;
+  @Output () isComplete= new EventEmitter<boolean>()
+  
   count =0;
-  isComplete: any;
+  author!: NewQuote;
   counter (type:string) {
     type==='add'?this.count++:this.count--
   }
@@ -17,8 +22,7 @@ export class DetailsComponent implements OnInit {
     this.isComplete.emit(complete);
   }
   
-  @Input () quotes1 !: NewQuote;
-  author!: NewQuote;
+  
   constructor() {}
 
   ngOnInit(): void {}

@@ -1,19 +1,19 @@
 <div class="container">
   <div class="row" id="row">
     <div class="col-md-4 text-center">
-      <h2>Add your quote here.</h2>
+      <h2 class="qq text-light">Add Quote</h2>
       <app-quote-form (sendQuotes)="createdQuotes($event)"></app-quote-form>
     </div>
     <div class="col-md-8 text-center">
-      <h2>
+      <h2 class="pop text-light">
         Popular Quotes
       </h2>
 
-      <ul *ngFor="let myquote of quotes1">
+      <ul *ngFor="let myquote of quotes1; let i= index">
         <li appHighlight>
           {{myquote.quote}}
         </li>
-        <app-details [quotes1]="myquote" [quotes1]="myquote" (isComplete) = 'deleteQuote($event,1)'>
+        <app-details [quotes1]="myquote" [quotes1]="myquote" (isComplete) = 'deleteQuote($event,i)'>
         </app-details>
       </ul>
     </div>

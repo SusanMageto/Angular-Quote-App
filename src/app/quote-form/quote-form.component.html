@@ -2,11 +2,11 @@
   <form #form='ngForm' (ngSubmit)="addQuote()">
     <div class="form-group">
       <label for="">Quote</label>
-      <input type="text" class="form-control" name="quote" #name="ngModel" [(ngModel)]="lastQuote.quote"> 
+      <textarea name="" id="" class="form-control" id= "form-control" name="quote" #name="ngModel" [(ngModel)]="lastQuote.quote" rows="6"></textarea>
     </div>
     <br>
     <div class="form-group" aria-required="true">
-      <label>Author</label>
+      <label >Author</label>
       <input type="text" class="form-control" name="author" #name="ngModel" [(ngModel)]="lastQuote.author">
     </div>
     <br>

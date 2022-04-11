@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NewQuote } from '../new-quote';
 
+
+
+
 @Component({
   selector: 'app-quotes',
   templateUrl: './quotes.component.html',
@@ -31,8 +34,8 @@ export class QuotesComponent implements OnInit {
   createdQuotes (lastQuote: any){
     this.quotes1.push(lastQuote)
   }
-  deleteQuote(isComplete, index){
-    if (isComplete) {
+  deleteQuote(complete, index:any){
+    if (complete) {
       this.quotes1.splice(index,1);
     }
   }
