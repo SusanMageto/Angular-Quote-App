@@ -13,24 +13,19 @@ export class QuotesComponent implements OnInit {
       quote:
         'Just because something doesn’t do what you planned it to do doesn’t mean it’s useless.',
       author: 'Thomas Edison (Inventor)',
-      upvotes: 0,
-      downvotes: 0,
+
     },
     {
       id: 1,
       quote:
         'It has become appallingly obvious that our technology has exceeded our humanity.',
       author: 'Albert Einstein (Scientist)',
-      upvotes: 0,
-      downvotes: 0,
     },
     {
       id: 1,
       quote:
         'Technology is anything that wasn’t around when you were born.',
       author: '- Alan Kay (Computer Scientist)',
-      upvotes: 0,
-      downvotes: 0,
     },
   ];
   createdQuotes (lastQuote: any){
